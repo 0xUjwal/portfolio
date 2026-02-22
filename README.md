@@ -26,7 +26,6 @@ A modern, responsive developer portfolio showcasing projects, work experience, a
 | **Animations** | Motion (Framer Motion), Lenis smooth scroll, View Transitions API |
 | **Theming**    | next-themes (dark / light / system)                               |
 | **Forms**      | React Hook Form + Zod validation                                  |
-| **Analytics**  | Umami (privacy-focused)                                           |
 | **Linting**    | ESLint 9, Prettier, Husky + lint-staged                           |
 
 ## Features
@@ -52,31 +51,3 @@ A modern, responsive developer portfolio showcasing projects, work experience, a
 - **Config-Driven Architecture** — Every section (Hero, About, Experience, Projects, Footer, Navbar) is driven by clean config files in `src/config/` — easy to update without touching components
 
 ---
-
-## Getting Started
-
-```bash
-npm install
-npm run dev
-```
-
-## Build
-
-```bash
-npm run build
-npm start
-```
-
-## Environment Variables
-
-Create a `.env` file:
-
-```env
-TELEGRAM_BOT_TOKEN="your-token"
-TELEGRAM_CHAT_ID="your-chat-id"
-GEMINI_API_KEY="your-api-key"
-NODE_ENV="development"
-NEXT_PUBLIC_URL="http://localhost:3000"
-NEXT_PUBLIC_UMAMI_SRC="your-umami-script-url"
-NEXT_PUBLIC_UMAMI_ID="your-umami-website-id"
-```
