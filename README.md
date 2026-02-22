@@ -1,38 +1,75 @@
-# Sleek Portfolio by ramxcodes
+﻿<div align="center">
 
-A modern, responsive portfolio website built with Next.js 15, TypeScript, Tailwind CSS, and Shadcn UI. Features a blog system, project showcase, work experience timeline, and contact form with Telegram integration.
+# Ujwal's Portfolio
 
-![Portfolio Preview](/public/meta/hero.png)
+![Portfolio Preview](/public/assets/Thumbnail.png)
 
-## Deploy
+A modern, responsive developer portfolio showcasing projects, work experience, and skills — built with performance and aesthetics in mind.
 
-Click here to your portfolio template now:
+[![Next.js](https://img.shields.io/badge/Next.js-15.3-black?logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Framxcodes%2Fsleek-portfolio&env=TELEGRAM_BOT_TOKEN,TELEGRAM_CHAT_ID,GEMINI_API_KEY,NEXT_PUBLIC_URL,NEXT_PUBLIC_UMAMI_SRC,NEXT_PUBLIC_UMAMI_ID)
+</div>
+
+---
+
+## Tech Stack
+
+| Category       | Technologies                                                      |
+| -------------- | ----------------------------------------------------------------- |
+| **Framework**  | Next.js 15 (App Router, Turbopack)                                |
+| **Language**   | TypeScript 5.9                                                    |
+| **UI**         | React 19, Tailwind CSS 4, Radix UI, Lucide Icons                  |
+| **Content**    | MDX (gray-matter, next-mdx-remote, Shiki syntax highlighting)     |
+| **Animations** | Motion (Framer Motion), Lenis smooth scroll, View Transitions API |
+| **Theming**    | next-themes (dark / light / system)                               |
+| **Forms**      | React Hook Form + Zod validation                                  |
+| **Analytics**  | Umami (privacy-focused)                                           |
+| **Linting**    | ESLint 9, Prettier, Husky + lint-staged                           |
 
 ## Features
 
-- **Next.js 15** with App Router
-- **Tailwind CSS** for styling
-- **Shadcn UI** components
-- **Dark/Light** mode
-- **Responsive** design
-- **MDX** for blog posts and project details
-- **Contact Form** with Telegram integration
-- **SEO** optimized
-- **TypeScript** for type safety
-- **Umami Analytics** for privacy-focused web analytics
+- **8 Project Showcases** — Each with a dedicated MDX detail page, tech stack breakdown, challenges, and learnings
+- **Work Experience Timeline** — Expandable cards with company details, role descriptions, and technologies used
+- **Contact Form** — Validated with Zod, submitted via Telegram Bot API
+- **AI Chat Bubble** — Gemini-powered conversational assistant embedded in the portfolio
+- **Dark / Light Mode** — System-aware theme switching with smooth transitions
+- **Smooth Scrolling** — Lenis-powered buttery smooth scroll experience
+- **View Transitions** — Native View Transitions API for seamless page navigation
+- **SEO Optimized** — Dynamic metadata, Open Graph images, and sitemap generation
+- **Fully Responsive** — Mobile-first design that works on all screen sizes
+- **Syntax Highlighting** — Shiki-powered code blocks in MDX project pages
+- **Resume Page** — Embedded resume viewer
 
-## Prerequisites
+## What Makes It Unique
 
-Before you begin, ensure you have the following installed:
+- **Oneko Cat** — An interactive cat that follows your cursor around the page
+- **Haptic Feedback** — Subtle vibration feedback on mobile interactions
+- **Custom Technology Icons** — Hand-crafted SVG icons for Bash, JSON, OpenCV, Kotlin, Whisper, FFmpeg, TensorFlow, Streamlit, Gradio, and OpenGL
+- **MDX Project System** — Full project detail pages with frontmatter-driven metadata, not just cards
+- **Config-Driven Architecture** — Every section (Hero, About, Experience, Projects, Footer, Navbar) is driven by clean config files in `src/config/` — easy to update without touching components
 
-- Node.js (v18 or higher)
-- Bun (preferred) or npm
+---
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+npm start
+```
 
 ## Environment Variables
 
-Create a `.env` file in the root directory with the following variables:
+Create a `.env` file:
 
 ```env
 TELEGRAM_BOT_TOKEN="your-token"
@@ -43,116 +80,3 @@ NEXT_PUBLIC_URL="http://localhost:3000"
 NEXT_PUBLIC_UMAMI_SRC="your-umami-script-url"
 NEXT_PUBLIC_UMAMI_ID="your-umami-website-id"
 ```
-
-### Setting up Telegram Integration
-
-1. Create a new bot with [@BotFather](https://t.me/botfather) on Telegram
-2. Copy the bot token and add it to your `.env` file as `TELEGRAM_BOT_TOKEN`
-3. Start a chat with your bot and send any message (e.g., "hello")
-4. Get your chat ID:
-
-   ```bash
-   # Run the test script to get your chat ID
-   bun run test-telegram
-   ```
-
-   - The script will show your Chat ID from the message you sent
-   - Copy the Chat ID and add it to your `.env` file as `TELEGRAM_CHAT_ID`
-   - Run the script again to verify everything works
-
-### Setting up Umami Analytics
-
-1. Visit Umami:
-   - Self-host Umami or use [Umami Cloud](https://cloud.umami.is)
-   - Follow Umami's [installation guide](https://umami.is/docs/install)
-
-2. Get your credentials:
-   - Copy your Umami script URL (ends with `/script.js`)
-   - Get your website ID from Umami dashboard
-
-3. Configure environment variables:
-   ```env
-   NEXT_PUBLIC_UMAMI_SRC="https://[your-umami-instance]/script.js"
-   NEXT_PUBLIC_UMAMI_ID="your-website-id"
-   ```
-
-## Getting Started
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/ramxcodes/sleek-portfolio.git
-   cd sleek-portfolio
-   ```
-
-2. Install dependencies:
-
-   ```bash
-   # Using bun (recommended)
-   bun install
-
-   # Using npm
-   npm install
-   ```
-
-3. Run the development server:
-
-   ```bash
-   # Using bun
-   bun dev
-
-   # Using npm
-   npm run dev
-   ```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-## Configuration
-
-The project uses configuration files in the `src/config` directory for easy customization:
-
-- `About.tsx` - About section content
-- `Contact.tsx` - Contact form settings
-- `Experience.tsx` - Work experience details
-- `Footer.tsx` - Footer links and content
-- `Gears.tsx` - Setup/gear section
-- `Hero.tsx` - Hero section content
-- `Meta.tsx` - SEO and metadata
-- `Navbar.tsx` - Navigation links
-- `Projects.tsx` - Project showcase settings
-- `Quote.ts` - Random quotes configuration
-- `Resume.ts` - Resume section details
-- `Setup.tsx` - Development setup information
-- `cat.ts` - Enable disable the cat
-
-## Adding New Technology Icons
-
-1. Visit [Devicon](https://devicon.dev/) to find the icon you want to add
-2. Create a new component in `src/components/technologies/`
-3. Follow the existing component structure for consistency
-
-Example:
-
-```tsx
-export const NewTechIcon = () => {
-  return <svg>// SVG content from devicon</svg>;
-};
-```
-
-## Adding Content
-
-### Blog Posts
-
-1. Create a new MDX file in `src/data/blog/`
-2. Add metadata and content following existing post structure
-3. Add blog thumbnail in `public/blog/`
-
-### Projects
-
-1. Create a new MDX file in `src/data/projects/`
-2. Add metadata and content following existing project structure
-3. Add project thumbnail in `public/project/`
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
