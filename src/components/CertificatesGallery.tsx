@@ -30,7 +30,7 @@ export default function CertificatesGallery({
 
   if (certificates.length === 0) {
     return (
-      <div className="flex min-h-[400px] flex-col items-center justify-center space-y-4 text-center">
+      <div className="flex min-h-100 flex-col items-center justify-center space-y-4 text-center">
         <h2 className="text-2xl font-semibold">No certificates found</h2>
         <p className="text-muted-foreground">
           Check back later for certificates and achievements!

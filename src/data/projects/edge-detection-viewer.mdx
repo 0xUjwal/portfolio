@@ -1,0 +1,65 @@
+---
+title: 'Edge Detection Viewer'
+description: 'Android camera app that applies real-time Canny edge detection using OpenCV and renders via OpenGL ES'
+image: '/project/edge-detection-viewer.png'
+technologies:
+  [
+    'Kotlin',
+    'OpenCV',
+    'OpenGL',
+    'TypeScript',
+  ]
+github: 'https://github.com/0xUjwal/Edge-Detection-Viewer'
+timeline: '2 weeks'
+role: 'Android Developer'
+team: 'Solo'
+status: 'completed'
+featured: false
+challenges:
+  [
+    'Managing frame data transfer between Java and native C++ efficiently',
+    'Maintaining stable FPS during continuous processing',
+    'Handling device orientation and frame rotation correctly',
+    'Resolving OpenCV and NDK compatibility issues',
+    'Optimizing Canny edge detection without excessive CPU usage',
+  ]
+learnings:
+  [
+    'Integrating OpenCV with Android using JNI and CMake',
+    'Efficient memory management between Kotlin and C++ layers',
+    'Real time image processing optimization techniques',
+    'OpenGL ES texture rendering and shader pipeline',
+    'Performance profiling and frame rate optimization on mobile devices',
+  ]
+isPublished: true
+---
+
+# Edge Detection Viewer
+
+## Overview
+
+Edge Detection Viewer is a real time Android computer vision application that captures camera frames using CameraX, processes them through native C++ OpenCV pipelines via JNI and renders the output using OpenGL ES 2.0. It also includes a TypeScript based web viewer for visualizing processed results and performance statistics.
+
+## Key Features
+
+* **Real Time Camera Processing:** Uses CameraX to capture frames and process them with minimal latency.
+* **Native C++ Integration via JNI:** High performance edge detection implemented using OpenCV in native code.
+* **Canny Edge Detection Pipeline:** Efficient grayscale conversion and optimized Canny processing.
+* **OpenGL ES 2.0 Rendering:** Hardware accelerated texture rendering with custom vertex and fragment shaders.
+* **Performance Monitoring:** Built in FPS counter and frame timing metrics.
+* **TypeScript Web Viewer:** Separate web interface for visualizing edge outputs and frame statistics.
+* **Raw and Processed Toggle:** Switch between original grayscale frames and processed edge detection output.
+
+## Why I Built This
+
+I wanted to deeply understand how mobile computer vision systems work at a low level. This project allowed me to combine CameraX, JNI, OpenCV and OpenGL ES while learning how data flows from camera capture to native processing and GPU rendering in real time.
+
+## Future Plans
+
+* Add multiple edge detection algorithms like Sobel and Laplacian
+* Implement real time WebSocket streaming between Android and web viewer
+* Add adjustable Canny thresholds via UI sliders
+* Enable video recording of processed frames
+* Introduce GPU accelerated processing for higher frame rates
+
+

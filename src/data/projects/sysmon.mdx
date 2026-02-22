@@ -1,0 +1,59 @@
+---
+title: 'SysMon'
+description: 'Lightweight Linux system monitoring dashboard with real-time CPU, memory, disk and network stats via a web UI'
+image: '/project/sysmon.png'
+technologies:
+  [
+    'Python',
+    'Bash',
+    'JSON',
+  ]
+github: 'https://github.com/0xUjwal/SysMon'
+timeline: '1 week'
+role: 'Full Stack'
+team: 'Solo'
+status: 'completed'
+featured: false
+challenges:
+  [
+    'Real-time data collection',
+    'Cross-platform system metrics',
+    'Efficient polling without overloading CPU',
+    'Responsive dashboard layout',
+  ]
+learnings:
+  [
+    'psutil system monitoring',
+    'cron based scheduling',
+    'Linux system internals',
+    'Dashboard UI design',
+  ]
+isPublished: true
+---
+
+# SysMon: Linux System Monitor
+
+## Overview
+
+SysMon is a lightweight Linux system monitoring and alerting tool written in Python. It tracks essential system metrics such as CPU usage, memory consumption, disk utilization and network throughput, logs them with timestamps and sends real time email alerts when predefined thresholds are exceeded. It is designed to run via Cron for continuous automated monitoring.
+
+## Key Features
+
+* **Comprehensive Monitoring:** Tracks CPU usage, RAM utilization, disk usage and network throughput using psutil.
+* **Persistent Logging:** Appends system metrics with precise timestamps to rotating log files.
+* **Threshold Based Email Alerts:** Sends instant SMTP email notifications when configured resource limits are breached.
+* **Secure Configuration:** Uses environment variables for sensitive credentials such as email passwords.
+* **Cron Integration:** Includes a Bash wrapper script for reliable scheduling and execution via Cron.
+
+## Why I Built This
+
+I wanted a lightweight and self managed monitoring solution for Linux servers without relying on heavy observability stacks. SysMon helped me understand system level behavior, automate health checks and implement alerting logic using core Python and Linux scheduling tools.
+
+## Future Plans
+
+* Desktop notifications alongside email alerts
+* Simple web dashboard for viewing historical logs
+* Data visualization using tools like Matplotlib
+* Granular per interface network monitoring
+* Docker container level monitoring support
+

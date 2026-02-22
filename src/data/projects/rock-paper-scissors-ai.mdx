@@ -1,0 +1,63 @@
+---
+title: 'Rock Paper Scissors AI'
+description: 'An intelligent Rock Paper Scissors game that learns your playing patterns using LSTM neural networks and tries to predict your next move!'
+image: '/project/rock-paper-scissors-ai.png'
+technologies:
+  [
+    'Python',
+    'TensorFlow',
+    'Gradio',
+  ]
+github: 'https://github.com/0xUjwal/rock-paper-scissors-ai'
+timeline: '2 weeks'
+role: 'ML Engineer'
+team: 'Solo'
+status: 'completed'
+featured: true
+challenges:
+  [
+    'Designing effective sequence encoding for player moves',
+    'Preventing overfitting with limited training data',
+    'Maintaining low latency during retraining and prediction',
+    'Managing model persistence without corrupting checkpoints',
+    'Ensuring consistent learning across extended gameplay sessions',
+  ]
+learnings:
+  [
+    'Implemented LSTM networks for sequential pattern prediction',
+    'Understood practical sequence encoding and preprocessing',
+    'Applied continuous retraining and model checkpointing',
+    'Built interactive AI systems using Gradio',
+    'Improved inference efficiency for real time gameplay',
+  ]
+isPublished: true
+---
+
+# Rock Paper Scissors AI
+
+## Overview
+
+Rock Paper Scissors AI is an intelligent game that uses an LSTM neural network to learn player behavior and predict future moves. Instead of detecting gestures, the system analyzes sequential move patterns and continuously adapts its strategy to counter the player in real time through an interactive Gradio interface.
+
+## Key Features
+
+* **LSTM Based Prediction:** Uses a Long Short Term Memory neural network to learn sequential move patterns.
+* **Adaptive Learning:** Continuously retrains after each round to improve prediction accuracy.
+* **Pattern Analysis:** Analyzes previous moves to forecast the next likely choice.
+* **Model Persistence:** Saves and reloads trained models to retain learned behavior across sessions.
+* **Interactive Gradio UI:** Responsive web interface with real time statistics and gameplay feedback.
+* **Comprehensive Stats Tracking:** Tracks wins, losses, ties and win rate dynamically.
+
+## Why I Built This
+
+I wanted to explore sequence modeling and practical applications of LSTM networks in a simple but strategic environment. Rock Paper Scissors provided a clean way to experiment with behavioral prediction, adaptive learning and real time AI decision making.
+
+## Future Plans
+
+* Improve prediction accuracy using deeper architectures
+* Add variable sequence length learning instead of fixed last 3 moves
+* Introduce difficulty levels with different AI strategies
+* Deploy optimized lightweight version for mobile devices
+* Add analytics dashboard for player behavior insights
+
+

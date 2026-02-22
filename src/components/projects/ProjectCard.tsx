@@ -77,20 +77,22 @@ export function ProjectCard({ project }: ProjectCardProps) {
               </h3>
             </Link>
             <div className="flex items-center gap-2">
-              <Tooltip>
-                <TooltipTrigger>
-                  <Link
-                    className="text-secondary hover:text-primary flex size-6 items-center justify-center transition-colors"
-                    href={project.link}
-                    target="_blank"
-                  >
-                    <Website />
-                  </Link>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>View Website</p>
-                </TooltipContent>
-              </Tooltip>
+              {project.link && (
+                <Tooltip>
+                  <TooltipTrigger>
+                    <Link
+                      className="text-secondary hover:text-primary flex size-6 items-center justify-center transition-colors"
+                      href={project.link}
+                      target="_blank"
+                    >
+                      <Website />
+                    </Link>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>View Website</p>
+                  </TooltipContent>
+                </Tooltip>
+              )}
               <Tooltip>
                 <TooltipTrigger>
                   {project.github && (
@@ -137,26 +139,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       </CardContent>
 
       {project.details && (
-        <CardFooter className="flex justify-between p-6 pt-0">
-          <div
-            className={`flex items-center gap-1 rounded-md px-2 py-1 text-xs ${
-              project.isWorking
-                ? 'border-green-300 bg-green-500/10'
-                : 'border-red-300 bg-red-500/10'
-            }`}
-          >
-            {project.isWorking ? (
-              <>
-                <div className="size-2 animate-pulse rounded-full bg-green-500" />
-                All Systems Operational
-              </>
-            ) : (
-              <>
-                <div className="size-2 animate-pulse rounded-full bg-red-500" />
-                Building
-              </>
-            )}
-          </div>
+        <CardFooter className="flex justify-end p-6 pt-0">
           <Link
             href={project.projectDetailsPageSlug}
             className="text-secondary hover:text-primary flex items-center gap-2 text-sm underline-offset-4 transition-colors hover:underline"

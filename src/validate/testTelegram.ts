@@ -1,5 +1,6 @@
 // Quick test script to verify Telegram setup
 // Uses Next.js environment variables (no dotenv needed)
+import 'dotenv/config';
 
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;

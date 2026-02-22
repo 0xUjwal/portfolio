@@ -1,5 +1,5 @@
-import { BlogComponents } from '@/components/blog/BlogComponents';
 import Container from '@/components/common/Container';
+import { MdxComponents } from '@/components/common/MdxComponents';
 import { Separator } from '@/components/ui/separator';
 import { generateMetadata as getMetadata } from '@/config/Meta';
 import { getJourneyContent } from '@/lib/journey';
@@ -48,7 +48,7 @@ export default function JourneyPage() {
         <Separator />
 
         <div className="prose prose-neutral dark:prose-invert max-w-none">
-          <MDXRemote source={data.content} components={BlogComponents} />
+          <MDXRemote source={data.content} components={MdxComponents} />
         </div>
       </div>
     </Container>

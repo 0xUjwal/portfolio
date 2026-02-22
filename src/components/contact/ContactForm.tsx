@@ -165,7 +165,7 @@ export default function ContactForm() {
                   <FormControl>
                     <Textarea
                       placeholder="Tell me about your project or just say hello..."
-                      className="min-h-[120px] resize-none"
+                      className="min-h-30 resize-none"
                       {...field}
                     />
                   </FormControl>

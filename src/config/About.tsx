@@ -1,26 +1,28 @@
-import Bun from '@/components/technologies/Bun';
+import AWS from '@/components/technologies/AWS';
+import Docker from '@/components/technologies/Docker';
+import Flask from '@/components/technologies/Flask';
+import Java from '@/components/technologies/Java';
 import JavaScript from '@/components/technologies/JavaScript';
 import MongoDB from '@/components/technologies/MongoDB';
-import NextJs from '@/components/technologies/NextJs';
-import NodeJs from '@/components/technologies/NodeJs';
-import PostgreSQL from '@/components/technologies/PostgreSQL';
-import Prisma from '@/components/technologies/Prisma';
+import Python from '@/components/technologies/Python';
 import ReactIcon from '@/components/technologies/ReactIcon';
-import TypeScript from '@/components/technologies/TypeScript';
+import SQL from '@/components/technologies/SQL';
+import TailwindCss from '@/components/technologies/TailwindCss';
 
 export const mySkills = [
-  <ReactIcon key="react" />,
-  <Bun key="bun" />,
+  <Python key="python" />,
   <JavaScript key="javascript" />,
-  <TypeScript key="typescript" />,
+  <Java key="java" />,
+  <SQL key="sql" />,
+  <ReactIcon key="react" />,
+  <Flask key="flask" />,
+  <TailwindCss key="tailwind-css" />,
+  <AWS key="aws" />,
   <MongoDB key="mongodb" />,
-  <NextJs key="nextjs" />,
-  <NodeJs key="nodejs" />,
-  <PostgreSQL key="postgresql" />,
-  <Prisma key="prisma" />,
+  <Docker key="docker" />,
 ];
 
 export const about = {
-  name: 'Ramkrishna Swarnkar',
-  description: `I'm a Full Stack web developer and Open Source Contributor, I love building products to solve real-world problems. I'm specialized in building MVP's.`,
+  name: 'Ujwal Kumar B R',
+  description: `I’m a full-stack developer and Information Science undergraduate, passionate about building tools that solve real-world problems. I enjoy turning complex ideas into scalable, efficient systems. Outside of coding, I spend my time trading, reading books and staying disciplined through bodybuilding.`,
 };

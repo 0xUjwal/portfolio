@@ -1,18 +1,26 @@
-import Bun from '@/components/technologies/Bun';
+import Bash from '@/components/technologies/Bash';
+import FFmpeg from '@/components/technologies/FFmpeg';
+import Flask from '@/components/technologies/Flask';
+import Gradio from '@/components/technologies/Gradio';
 import JavaScript from '@/components/technologies/JavaScript';
-import MongoDB from '@/components/technologies/MongoDB';
+import Json from '@/components/technologies/Json';
+import Kotlin from '@/components/technologies/Kotlin';
 // Import technology components
 import NextJs from '@/components/technologies/NextJs';
-import NodeJs from '@/components/technologies/NodeJs';
-import PostgreSQL from '@/components/technologies/PostgreSQL';
-import Prisma from '@/components/technologies/Prisma';
+import OpenCV from '@/components/technologies/OpenCV';
+import OpenGL from '@/components/technologies/OpenGL';
+import Python from '@/components/technologies/Python';
 import ReactIcon from '@/components/technologies/ReactIcon';
+import Streamlit from '@/components/technologies/Streamlit';
+import TailwindCss from '@/components/technologies/TailwindCss';
+import TensorFlow from '@/components/technologies/TensorFlow';
 import TypeScript from '@/components/technologies/TypeScript';
+import Whisper from '@/components/technologies/Whisper';
 import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
 import React from 'react';
 
-import { CodeCopyButton } from '../blog/CodeCopyButton';
+import { CodeCopyButton } from '../common/CodeCopyButton';
 
 // Technology mapping for dynamic components
 const TechnologyComponents: Record<string, React.ComponentType> = {
@@ -24,17 +32,32 @@ const TechnologyComponents: Record<string, React.ComponentType> = {
   typescript: TypeScript,
   JavaScript: JavaScript,
   javascript: JavaScript,
-  'Node.js': NodeJs,
-  nodejs: NodeJs,
-  node: NodeJs,
-  MongoDB: MongoDB,
-  mongodb: MongoDB,
-  PostgreSQL: PostgreSQL,
-  postgresql: PostgreSQL,
-  Prisma: Prisma,
-  prisma: Prisma,
-  Bun: Bun,
-  bun: Bun,
+  Python: Python,
+  python: Python,
+  Flask: Flask,
+  flask: Flask,
+  Whisper: Whisper,
+  whisper: Whisper,
+  FFmpeg: FFmpeg,
+  ffmpeg: FFmpeg,
+  'Tailwind CSS': TailwindCss,
+  tailwindcss: TailwindCss,
+  Streamlit: Streamlit,
+  streamlit: Streamlit,
+  Gradio: Gradio,
+  gradio: Gradio,
+  TensorFlow: TensorFlow,
+  tensorflow: TensorFlow,
+  Kotlin: Kotlin,
+  kotlin: Kotlin,
+  OpenCV: OpenCV,
+  opencv: OpenCV,
+  OpenGL: OpenGL,
+  opengl: OpenGL,
+  Bash: Bash,
+  bash: Bash,
+  JSON: Json,
+  json: Json,
 };
 
 // Custom Technology component for displaying technology badges with icons
