@@ -1,6 +1,6 @@
 export default function GenAI() {
   return (
-    <svg viewBox="0 0 128 128">
+    <svg viewBox="0 0 128 128" aria-hidden="true">
       <rect width="128" height="128" rx="16" fill="#1B1F3B" />
       <path
         fill="#7C5CFF"
