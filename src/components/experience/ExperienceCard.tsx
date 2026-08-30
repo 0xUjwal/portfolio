@@ -1,14 +1,12 @@
-'use client';
-
 import { type Experience } from '@/config/Experience';
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React from 'react';
 
 import Skill from '../common/Skill';
 
 interface ExperienceCardProps {
   experience: Experience;
-  defaultExpanded?: boolean;
+  showDescription?: boolean;
 }
 
 const parseDescription = (text: string): string => {
@@ -17,10 +15,8 @@ const parseDescription = (text: string): string => {
 
 export function ExperienceCard({
   experience,
-  defaultExpanded = false,
+  showDescription = false,
 }: ExperienceCardProps) {
-  const [expanded, setExpanded] = useState(defaultExpanded);
-
   return (
     <div className="flex flex-col gap-4">
       {/* Company Header */}
@@ -80,28 +76,17 @@ export function ExperienceCard({
         </div>
       </div>
 
-      {/* View More / Description */}
-      {experience.description.length > 0 && (
-        <div>
-          <button
-            onClick={() => setExpanded(!expanded)}
-            className="text-secondary hover:text-primary cursor-pointer text-sm font-medium transition-colors"
-          >
-            {expanded ? '▾ View Less' : '▸ View More'}
-          </button>
-          {expanded && (
-            <div className="text-secondary mt-2 flex flex-col gap-1">
-              {experience.description.map(
-                (description: string, descIndex: number) => (
-                  <p
-                    key={descIndex}
-                    dangerouslySetInnerHTML={{
-                      __html: `• ${parseDescription(description)}`,
-                    }}
-                  />
-                ),
-              )}
-            </div>
+      {showDescription && experience.description.length > 0 && (
+        <div className="text-secondary mt-2 flex flex-col gap-1">
+          {experience.description.map(
+            (description: string, descIndex: number) => (
+              <p
+                key={descIndex}
+                dangerouslySetInnerHTML={{
+                  __html: `• ${parseDescription(description)}`,
+                }}
+              />
+            ),
           )}
         </div>
       )}

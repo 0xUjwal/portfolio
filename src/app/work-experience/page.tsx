@@ -51,7 +51,7 @@ export default function WorkExperiencePage() {
             </h2>
           </div>
 
-          <ExperienceList experiences={experiences} defaultExpanded={true} />
+          <ExperienceList experiences={experiences} showDescription={true} />
         </div>
       </div>
     </Container>

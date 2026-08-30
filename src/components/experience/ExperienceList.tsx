@@ -5,12 +5,12 @@ import { ExperienceCard } from './ExperienceCard';
 
 interface ExperienceListProps {
   experiences: Experience[];
-  defaultExpanded?: boolean;
+  showDescription?: boolean;
 }
 
 export function ExperienceList({
   experiences,
-  defaultExpanded = false,
+  showDescription = false,
 }: ExperienceListProps) {
   if (experiences.length === 0) {
     return (
@@ -26,7 +26,7 @@ export function ExperienceList({
         <ExperienceCard
           key={experience.company}
           experience={experience}
-          defaultExpanded={defaultExpanded}
+          showDescription={showDescription}
         />
       ))}
     </div>

@@ -1,12 +1,16 @@
 import AWS from '@/components/technologies/AWS';
 import ExpressJs from '@/components/technologies/ExpressJs';
+import GenAI from '@/components/technologies/GenAI';
 import GithubActions from '@/components/technologies/GithubActions';
 import JavaScript from '@/components/technologies/JavaScript';
 import MongoDB from '@/components/technologies/MongoDB';
 import NodeJs from '@/components/technologies/NodeJs';
+import OracleEBS from '@/components/technologies/OracleEBS';
+import PLSQL from '@/components/technologies/PLSQL';
 import Python from '@/components/technologies/Python';
 import ReactIcon from '@/components/technologies/ReactIcon';
 import RestApi from '@/components/technologies/RestApi';
+import SQL from '@/components/technologies/SQL';
 import TailwindCss from '@/components/technologies/TailwindCss';
 
 export interface Technology {
@@ -31,16 +35,49 @@ export interface Experience {
 export const experiences: Experience[] = [
   {
     isCurrent: true,
+    company: 'Tektronix',
+    position: 'Intern',
+    location: 'Bengaluru',
+    image: '/company/Tektronix.png',
+    description: [
+      'Worked on Oracle EBS using SQL and PL/SQL, optimizing queries and supporting enterprise application workflows.',
+      'Contributed to enhancements and issue resolution across the Order-to-Cash (O2C) and Procure-to-Pay (P2P) business cycles.',
+    ],
+    startDate: 'April 2026',
+    endDate: 'Present',
+    website: 'https://www.tek.com/',
+    technologies: [
+      {
+        name: 'SQL',
+        href: 'https://www.w3schools.com/sql/',
+        icon: <SQL />,
+      },
+      {
+        name: 'PL/SQL',
+        href: 'https://www.oracle.com/database/technologies/appdev/plsql.html',
+        icon: <PLSQL />,
+      },
+      {
+        name: 'Oracle EBS',
+        href: 'https://www.oracle.com/applications/ebusiness/',
+        icon: <OracleEBS />,
+      },
+    ],
+  },
+  {
+    isCurrent: false,
     company: 'Commonwealth Bank of Australia',
     position: 'SDE Trainee (Apprenticeship)',
     location: 'Remote',
     image: '/company/CBA.png',
     description: [
-      'Selected for an apprenticeship-based SDE training program focused on JavaScript and frontend engineering fundamentals.',
-      'Completed 10+ guided assignments and mini-projects, strengthening problem-solving skills and core development practices.',
+      'Completed a structured SDE apprenticeship focused on full-stack development, data engineering, cloud computing and AI fundamentals.',
+      'Built web applications using React.js, Node.js, REST APIs, MongoDB and JavaScript through hands-on development projects.',
+      'Worked with SQL, Git, Linux, AWS, authentication, debugging and software development practices.',
+      'Strengthened problem-solving and engineering fundamentals through practical work in DSA, databases, APIs and scalable application development.',
     ],
     startDate: 'Jan 2026',
-    endDate: 'Present',
+    endDate: 'June 2026',
     website: 'https://www.commbank.com.au/about-us/careers/india.html',
     technologies: [
       {
@@ -72,6 +109,16 @@ export const experiences: Experience[] = [
         name: 'MongoDB',
         href: 'https://www.mongodb.com/',
         icon: <MongoDB />,
+      },
+      {
+        name: 'AWS',
+        href: 'https://aws.amazon.com/',
+        icon: <AWS />,
+      },
+      {
+        name: 'Gen AI',
+        href: 'https://aws.amazon.com/ai/generative-ai/',
+        icon: <GenAI />,
       },
     ],
   },
