@@ -169,4 +169,21 @@ export const experiences: Experience[] = [
       },
     ],
   },
+  {
+    isCurrent: false,
+    company: 'P2P.me',
+    position: 'Community Ambassador',
+    location: 'Remote',
+    image: '/company/P2P.png',
+    description: [
+      'Supported a 5,000+ member community as a community ambassador, handling user queries, troubleshooting issues, and improving customer support.',
+      'Built an FAQ website for new users and merchants, organizing onboarding, transaction, security and support information into an accessible self-service resource.',
+    ],
+    startDate: 'May 2025',
+    endDate: 'Aug 2025',
+    website: 'https://p2p.me/',
+    technologies: [],
+  },
 ];
+
+export const featuredExperienceCount = 3;

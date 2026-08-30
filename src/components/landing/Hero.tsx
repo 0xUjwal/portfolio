@@ -9,6 +9,7 @@ import CV from '../svgs/CV';
 import Chat from '../svgs/Chat';
 import { Button } from '../ui/button';
 import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip';
+import TypeOnHeading from './TypeOnHeading';
 
 const buttonIcons = {
   CV: CV,
@@ -16,7 +17,7 @@ const buttonIcons = {
 };
 
 export default function Hero() {
-  const { name, title, avatar, buttons } = heroConfig;
+  const { name, avatar, buttons } = heroConfig;
 
   return (
     <Container className="mx-auto max-w-5xl">
@@ -31,9 +32,10 @@ export default function Hero() {
 
       {/* Text Area */}
       <div className="mt-8 flex flex-col gap-2">
-        <h1 className="text-4xl font-bold">
-          Hi, I&apos;m {name} — <span className="text-secondary">{title}</span>
-        </h1>
+        <TypeOnHeading
+          text={`Hi, I'm ${name}`}
+          className="text-4xl font-bold"
+        />
       </div>
 
       {/* Buttons */}

@@ -2,10 +2,8 @@ import Bash from '@/components/technologies/Bash';
 import FFmpeg from '@/components/technologies/FFmpeg';
 import Flask from '@/components/technologies/Flask';
 import Gradio from '@/components/technologies/Gradio';
-import JavaScript from '@/components/technologies/JavaScript';
 import Json from '@/components/technologies/Json';
 import Kotlin from '@/components/technologies/Kotlin';
-import NextJs from '@/components/technologies/NextJs';
 import OpenCV from '@/components/technologies/OpenCV';
 import OpenGL from '@/components/technologies/OpenGL';
 import Python from '@/components/technologies/Python';
@@ -81,21 +79,6 @@ export const projects: Project[] = [
     isWorking: true,
   },
   {
-    title: 'Rock Paper Scissors AI',
-    description:
-      'An intelligent Rock Paper Scissors game that learns your playing patterns using LSTM neural networks and tries to predict your next move',
-    image: '/project/rock-paper-scissors-ai.png',
-    technologies: [
-      { name: 'Python', icon: <Python key="python" /> },
-      { name: 'TensorFlow', icon: <TensorFlow key="tensorflow" /> },
-      { name: 'Gradio', icon: <Gradio key="gradio" /> },
-    ],
-    github: 'https://github.com/0xUjwal/rock-paper-scissors-ai',
-    details: true,
-    projectDetailsPageSlug: '/projects/rock-paper-scissors-ai',
-    isWorking: true,
-  },
-  {
     title: 'Edge Detection Viewer',
     description:
       'Android camera app that applies real-time Canny edge detection using OpenCV and renders via OpenGL ES',
@@ -109,35 +92,6 @@ export const projects: Project[] = [
     github: 'https://github.com/0xUjwal/Edge-Detection-Viewer',
     details: true,
     projectDetailsPageSlug: '/projects/edge-detection-viewer',
-    isWorking: true,
-  },
-  {
-    title: 'QR Code Generator',
-    description:
-      'Simple and fast browser-based QR code generator built with vanilla JavaScript and hosted on GitHub Pages',
-    image: '/project/qr-code-generator.png',
-    technologies: [
-      { name: 'JavaScript', icon: <JavaScript key="javascript" /> },
-    ],
-    github: 'https://github.com/0xUjwal/QR-Code-generator',
-    details: true,
-    projectDetailsPageSlug: '/projects/qr-code-generator',
-    isWorking: true,
-  },
-  {
-    title: 'Portfolio',
-    description:
-      'Personal developer portfolio built with Next.js, TypeScript, and Tailwind CSS showcasing projects and experience',
-    image: '/project/portfolio.png',
-    technologies: [
-      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'React', icon: <ReactIcon key="react" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-    ],
-    github: 'https://github.com/0xUjwal/portfolio',
-    details: true,
-    projectDetailsPageSlug: '/projects/portfolio',
     isWorking: true,
   },
 ];
