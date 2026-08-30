@@ -30,7 +30,7 @@ A modern, responsive developer portfolio showcasing projects, work experience, a
 
 ## Features
 
-- **8 Project Showcases** — Each with a dedicated MDX detail page, tech stack breakdown, challenges, and learnings
+- **5 Project Showcases** — Each with a dedicated MDX detail page, tech stack breakdown, challenges, and learnings
 - **Work Experience Timeline** — Expandable cards with company details, role descriptions, and technologies used
 - **Contact Form** — Validated with Zod, submitted via Telegram Bot API
 - **AI Chat Bubble** — Gemini-powered conversational assistant embedded in the portfolio

@@ -34,7 +34,7 @@ export function ExperienceCard({
               alt={experience.company}
               width={100}
               height={100}
-              className="size-12 rounded-md transition-opacity hover:opacity-80"
+              className="size-12 rounded-md object-contain transition-opacity hover:opacity-80"
             />
           </a>
           <div className="flex flex-col">
@@ -60,21 +60,22 @@ export function ExperienceCard({
         </div>
       </div>
 
-      {/* Technologies */}
-      <div>
-        <h4 className="text-md mt-4 mb-2 font-semibold">Technologies</h4>
-        <div className="flex flex-wrap gap-2">
-          {experience.technologies.map((technology, techIndex: number) => (
-            <Skill
-              key={techIndex}
-              name={technology.name}
-              href={technology.href}
-            >
-              {technology.icon}
-            </Skill>
-          ))}
+      {experience.technologies.length > 0 && (
+        <div>
+          <h4 className="text-md mt-4 mb-2 font-semibold">Technologies</h4>
+          <div className="flex flex-wrap gap-2">
+            {experience.technologies.map((technology, techIndex: number) => (
+              <Skill
+                key={techIndex}
+                name={technology.name}
+                href={technology.href}
+              >
+                {technology.icon}
+              </Skill>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
 
       {showDescription && experience.description.length > 0 && (
         <div className="text-secondary mt-2 flex flex-col gap-1">

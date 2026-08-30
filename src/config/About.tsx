@@ -24,5 +24,5 @@ export const mySkills = [
 
 export const about = {
   name: 'Ujwal Kumar B R',
-  description: `I’m a full-stack developer and Information Science undergraduate, passionate about building tools that solve real-world problems. I enjoy turning complex ideas into scalable, efficient systems. Outside of coding, I spend my time trading, reading books and staying disciplined through bodybuilding.`,
+  description: `I’m a software developer and Information Science undergraduate, passionate about building tools that solve real-world problems. I enjoy turning complex ideas into scalable, efficient systems. Outside of coding, I spend my time trading, reading books and staying disciplined through bodybuilding.`,
 };
